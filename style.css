@@ -1,0 +1,160 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display:block;
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(img/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    padding: 0 2rem;
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.ribbon-text, a{
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+    max-width: 42%;
+    height: auto;
+  margin-top: 2rem;
+    margin-bottom: 3.3rem;
+}
+
+.mockup{
+    margin-bottom: 3.3rem;
+}
+
+.ribbon-text{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.summary{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.774);
+    padding: 0 0.2rem;
+    margin-bottom: 1.4rem
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: hsl(257, 40%, 49%);
+    margin-bottom: 3rem;
+}
+
+.register{
+    flex-shrink: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+    max-width: 60%;
+    padding: 0.5rem 6.5rem;
+    border-radius: 2.5rem;
+}
+
+span{
+display: flex;
+justify-content: center;
+
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+@media screen and (min-width:23.625rem) {
+    body{
+        background-image: url(img/bg-desktop.svg);
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width:35.5rem) {
+
+body{
+    padding: 0 4rem;
+    padding-bottom: 0;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.logo{
+    margin-top: 3rem;
+    margin-bottom: 4.8rem;
+}
+.right-side{
+  /*   display: flex;
+    flex-direction: column; */
+    padding-left: 2rem;
+}
+
+.ribbon-text{
+    text-align: start;
+    font-size: 2.3rem;
+    margin-top: 3rem;
+}
+
+.summary{
+    text-align: start;
+    padding: 0 0.1rem;
+}
+
+.register:hover, .register:active{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+.register{
+    padding: 1rem 5rem;
+    border-radius: 2.5rem;
+    margin-bottom: 14rem;
+}
+
+span{
+    justify-content: flex-start;
+}
+
+div{
+justify-content: flex-end;
+}
+
+}
